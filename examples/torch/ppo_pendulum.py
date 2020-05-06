@@ -26,6 +26,7 @@ def torch_ppo_pendulum(ctxt=None, seed=1):
 
     """
     set_seed(seed)
+    # env creation causing core dump :-/
     env = TfEnv(env_name='InvertedDoublePendulum-v2')
 
     runner = LocalRunner(ctxt)

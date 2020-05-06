@@ -20,6 +20,7 @@ class TfEnv(GarageEnv):
     """
 
     def __init__(self, env=None, env_name='', is_image=False):
+	# @TODO fix this line blowing shit up
         super().__init__(env, env_name, is_image=is_image)
         self.action_space = akro.from_gym(self.env.action_space)
         self.observation_space = akro.from_gym(self.env.observation_space,

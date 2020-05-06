@@ -14,6 +14,9 @@ class HalfCheetahEnvMetaBase(HalfCheetahEnv_):
 
     """
 
+    def __init__(self, task=None):
+        print(666)
+
     def _get_obs(self):
         """Get a low-dimensional observation of the state.
 

@@ -53,6 +53,8 @@ class GarageEnv(gym.Wrapper):
         self._env = env
 
         if env_name:
+            print(env_name)
+            # @TODO fix this line blowing things up
             super().__init__(gym.make(env_name))
         else:
             super().__init__(env)

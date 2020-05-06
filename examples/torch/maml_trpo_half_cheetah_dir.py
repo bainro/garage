@@ -37,6 +37,7 @@ def maml_trpo(ctxt, seed, epochs, rollouts_per_task, meta_batch_size):
 
     """
     set_seed(seed)
+    # @TODO blowing up here...
     env = GarageEnv(normalize(HalfCheetahDirEnv(), expected_action_scale=10.))
 
     policy = GaussianMLPPolicy(
